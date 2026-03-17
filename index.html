@@ -1,96 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
     <title>Copyflix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <header class="top-nav"> 
-        <div class="nav-left">
-            <div class="logo">COPYFLIX</div>
-            <nav class="main-menu"></nav>
-            <a href="#" class="active">Início</a>
-            <a href="#" >Séries</a>
-            <a href="#" >Filmes</a>
-            <a href="#" >Bombando</a>
-            <a href="#" >Minha lista</a>
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="nav-left">
+        <div class="logo">COPYFLIX</div>
+        <nav class="main-menu">
+          <a href="#" class="active">Início</a>
+          <a href="./pages/contas/index.html">contas</a>
+          <a href="./pages/login/index.html">login</a>
+          <a href="./pages/perfil/index.html">perfil</a>
+          <a href="#">Minha lista</a>
         </nav>
-        </div>
-        <div class="nav-right">
-         <button class="icon-button" aria-label="Buscar">
-            🔎
-         </button>
-         <button class="icon-button" aria-label="Notificações">
-          🔔 
+      </div>
+      <div class="nav-right">
+        <button class="icon-button" aria-label="Buscar">
+          🔍
+        </button>
+        <button class="icon-button" aria-label="Notificações">
+          🔔
         </button>
         <div class="profile"></div>
-    </div>
-</header>
-<main>
-    <!-- Seção de destaque-->
-     <div>
+      </div>
+    </header>
+
+   
+    
+    <main>
+      <!-- Seção de destaque / herói -->
+      <section id="hero" class="hero">
+        <div class="hero-background" id="hero-background">
+          <!-- imagem de fundo via CSS/JS -->
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 id="hero-title" class="hero-overview">
-                Sinopse do filme ou série em destaque vai aparecer aqui quando os dados forem carregados da API.
-                <p>
-                <div class="hero-actions">
-                    <button class="btn btn-primary">
-                     ▶️ Assistir
-                    </button>
-                    <button class="btn btn-secondary">
-                        🎁 Mais informações
-                    </button>
-                </div>
-                <div class="hero-pagination"
-                id="hero hero-pagination">
+          <h1 id="hero-title" class="hero-title">Título em destaque</h1>
+          <p id="hero-overview" class="hero-overview">
+            Sinopse do filme ou série em destaque vai aparecer aqui quando os
+            dados forem carregados da API.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">
+              ▶ Assistir
+            </button>
+            <button class="btn btn-secondary">
+              ⓘ Mais informações
+            </button>
+          </div>
+          <div class="hero-pagination" id="hero-pagination">
+            <!-- bolinhas do carrossel de destaque (preenchidas via JS) -->
+          </div>
+        </div>
+      </section>
 
-            </div>
-                 </div>
-                 <section> 
-                 <section class="rows">
-                  <div class="row">
-                    <h2 class="row-title">Descubra suas próximas histórias</h2>
-                    <div class="row-scroller" id="row-trending">
+      <!-- Listas horizontais -->
+      <section class="rows">
+        <div class="row">
+          <h2 class="row-title">Descubra suas próximas histórias</h2>
+          <div class="row-scroller" id="row-trending">
+            <!-- cards preenchidos via JS -->
+          </div>
+        </div>
 
-                    </div>
-                    </div>
-                    <div class="row">
-                        <h2 class="row-title">Séries para maratonar</h2>
-                        <div class="row-scroller" id="row-series">
+        <div class="row">
+          <h2 class="row-title">Séries para maratonar</h2>
+          <div class="row-scroller" id="row-series">
+            <!-- cards preenchidos via JS -->
+          </div>
+        </div>
 
-                        </div>
-                    </div>
+        <div class="row">
+          <h2 class="row-title">Filmes populares</h2>
+          <div class="row-scroller" id="row-movies">
+            <!-- cards preenchidos via JS -->
+          </div>
+        </div>
+      </section>
+    </main>
 
-                    <div class="row">
-                      <h2 class="row=title">Filmes Populares</h2>
-                        <div class="row-scroller" id="row-movies">
-                        </div>
-                        </div>
-                 </section>
-                </main>
-                    <footer class="footer">
-                        <p>Clones simples da página inicial da Netflix para estudos.</p>
-                    </footer>
+    <footer class="footer">
+      <p>Clone simples da página inicial da Netflix para estudos.</p>
+    </footer>
 
-                    <script src="./config.js"></script>
+    <!-- Configuração da API (chave, URL base, etc.) -->
+    <!-- Arquivo opcional separado para não expor diretamente a chave no código principal -->
+    <script src="./config.js"></script>
 
-                    <script src="./script.js"></script>
-                    <body>
-                        <html>
-
-                        </html>
-                    </body>
-                
-                </p>
-
-            </h1>
-
-        
-     </div>
-
-
-</body>
+    <!-- Lógica principal da página -->
+    <script src="./main.js"></script>
+  </body>
 </html>
+
